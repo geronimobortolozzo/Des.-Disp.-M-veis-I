@@ -1,16 +1,72 @@
-# salao_de_agendamentos
+📝 Descrição
+Este projeto é um sistema de agendamentos para salão, desenvolvido com Flutter. O aplicativo permite:
 
-A new Flutter project.
+Cadastrar agendamentos com nome do cliente, serviço e data/hora.
 
-## Getting Started
+Listar todos os agendamentos salvos.
 
-This project is a starting point for a Flutter application.
+Editar ou excluir agendamentos.
 
-A few resources to get you started if this is your first Flutter project:
+Buscar agendamentos pelo nome do cliente ou serviço.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Todos os dados ficam salvos localmente no dispositivo.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+🚀 Como rodar o projeto
+✔️ Pré-requisitos:
+Ter o Flutter instalado na sua máquina.
+
+Estar com um emulador Android ou dispositivo físico conectado.
+
+✔️ Passos:
+Clone ou abra o projeto no seu editor (VSCode, Android Studio ou outro).
+
+No terminal, execute:
+
+arduino
+Copiar
+Editar
+flutter pub get
+Isso vai instalar as dependências necessárias.
+
+Conecte um dispositivo físico ou abra um emulador.
+
+Execute o projeto com:
+
+flutter run
+📦 Dependências utilizadas
+shared_preferences: usada para armazenar os agendamentos localmente no dispositivo.
+
+uuid: usada para gerar IDs únicos para cada agendamento.
+
+📚 Estrutura do Projeto
+O projeto foi desenvolvido inteiramente dentro do arquivo main.dart, sem separação em pastas.
+
+O main.dart contém:
+
+O modelo Agendamento.
+
+A classe de serviço AgendamentoService (responsável por salvar, carregar, adicionar, editar e excluir agendamentos).
+
+As telas:
+
+ListaPage: tela inicial, onde você visualiza, busca, edita e exclui agendamentos.
+
+CadastroPage: tela onde você cria ou edita um agendamento.
+
+🔧 Funcionalidades principais
+✅ Cadastrar novos agendamentos.
+
+✅ Editar agendamentos existentes.
+
+✅ Excluir agendamentos.
+
+✅ Busca por nome do cliente ou serviço.
+
+✅ Salvamento local (os dados permanecem no dispositivo mesmo após fechar o app).
+
+💡 Observações importantes
+Todas as funcionalidades estão centralizadas no main.dart.
+
+As dependências são essenciais para o funcionamento. Não remova shared_preferences nem uuid do projeto.
+
+Este projeto salva os dados localmente, portanto, ele não utiliza banco de dados online.
